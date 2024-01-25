@@ -1,6 +1,5 @@
 package pet.store.entity;
 
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,11 +11,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-@Entity
-@Data
-public class Employee {
 
-	@Id
+@Entity 
+@Data 
+public class Employee {
+	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long employeeId;
 	private String employeeFirstName;
